@@ -1,5 +1,5 @@
 TCP Program for transferring a large message.
- - The message transmitted from Client to Server is read from a large file, and the ENTIRE message is sent by the Client as a stream of bytes.
+ - The message transmitted from Client to Server is read from a large file, and the ENTIRE message is sent by the Client as a single data unit (of course, TCP transmits this singular packet as a stream of bytes).
  - After receiving the file, Server sends an ACK to the Client.
  - We can verify that the file has been sent completely, by using "diff" command between original file and received file
 
