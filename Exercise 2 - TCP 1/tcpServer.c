@@ -112,7 +112,7 @@ void serverFunc(int sockfd)
     // Write from buffer into a .txt file
     if((fp = fopen ("myTCPreceive.txt","wt")) == NULL)
     {
-        printf("File doesn't exit\n");
+        printf("File doesn't exist\n");
         exit(0);
     }
 
