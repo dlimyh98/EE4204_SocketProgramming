@@ -28,7 +28,7 @@ int main(void)
 	server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
 	bzero(&(server_addr.sin_zero), 8);
 
-    // AssodataCounterate Socket to some Port, so Server knows which IP-Address/Port pair it should listen to
+    // Associate Socket to some Port, so Server knows which IP-Address/Port pair it should listen to
     // e.g. have Server Socket be bound to Port 80 for Web Server
 	ret = bind(sockfd, (struct sockaddr *) &server_addr, sizeof(struct sockaddr));
 	if (ret < 0)

@@ -68,7 +68,7 @@ int main(int argc, char **argv)
     /*********************************** Open local file to read data (Different from normal TCP) *************************************************/
 	if((fp = fopen ("myfile.txt","r+t")) == NULL)
 	{
-		printf("File doesn't exit\n");
+		printf("File doesn't exist\n");
 		exit(0);
 	}
 
