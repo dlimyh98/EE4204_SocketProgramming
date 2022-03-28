@@ -64,6 +64,9 @@ void receiveStringOnServer(int sockfd, struct sockaddr_in client_addr)
         printf("error receiving");
         exit(1);
     }
+
+    printf("Server received %d bytes from Client\n", n);
+
     recvs[n] = '\0';
     printf("The received string is : %s", recvs);
 
